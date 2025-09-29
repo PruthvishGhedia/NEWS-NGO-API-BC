@@ -39,7 +39,7 @@ if (isProduction) {
     const port = Number(process.env.PG_PORT || 5432);
     const database = process.env.PG_DB || "news_ngo";
     const username = process.env.PG_USER || "postgres";
-    const password = process.env.PG_PASSWORD || "";
+    const password = process.env.PG_PASSWORD || "dar@123";
 
     sequelize = new Sequelize(database, username, password, {
       host,
